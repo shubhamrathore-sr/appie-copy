@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: rgb(232, 232, 232);
+    margin : 0;
+	font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 1200px;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif; !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+.head{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.select{
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    margin-left: 10%;
+    text-align-last: center;
+    font-size: 16px;
+    outline: none;
+    color: rgb(93, 91, 91);
+    border: none;
+    background-color:rgb(255, 255, 255);
+}
+.select:hover{
+    background-color:  rgb(255, 255, 255);
+}
+.button{
+    border-radius: 5px;
+    height: 65px;
+    width: 200px;
+    margin-left: 10%;
+    font-size: 14px;
+    float:right;
+    outline: none;
+    color: rgb(255, 253, 253);
+    border: 1px solid rgb(194, 193, 193);
+    background-color:rgb(236, 55, 100);
+        font-weight: bold;
+    
+}
+
+.button:hover{
+    background-color:rgb(204, 40, 40);
+}
+.action-container{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+.heading{
+    display: flex;
+    width: 1200PX;
+    height: 85px;
+    
+    font-weight:normal;
+    /* border-radius: px; */
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid rgb(200, 200, 200);
+    background-color: white;
+    margin-bottom: 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+.content-detail{
+    display: flex;
+    width: 1200PX;
+    height: 85px;
+    color: rgb(134, 131, 131);
+    border-radius: 3px;
+    align-items: center;
+    /* box-shadow: 0 0 5px grey;  */
+    background-color: white;  
+    margin-bottom: 5px;
+}
+.content-heading{
+    margin-left: 3%;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+.names{
+    font-size: 14px;
+    margin-left: 4%;
+    width: 16.5%;
+    color: rgb(107, 104, 104);
+    display:flex;
+    align-items:center;
+}
+.documents{
+    font-size: 14px;
+    display: flex;
+    width: 35%;
+    color:black;
+    position:relative;
+}
+.doc{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.add-btn-assets{
+    color:rgb(0, 0, 0);
+    font-size: 35px ;
+    padding-top: 5px;
+    position: absolute;
+    right: -30px;
+    top: -35px;
+}
+.add-btn{
+    color:rgb(0, 0, 0);
+    font-size: 35px ;
+    padding-top: 5px;
+    position: absolute;
+       left: 377px;
+    margin-top: -3px;
+}
+.signals{
+    width: 30%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+}
+.label{
+    border-radius: 3px;
+    color: white;
+    font-size: 11px;
+    margin-right: 10px;
+    padding: 6px;
+    text-align:center;
+    width:30%;
+}
+
+
+.accordion-content {
+	background-color: white;
+	display: none;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+
+.accordion-content.active {
+	display: block;
+}
+
+.expanded-documents {
+	display: flex;
+	flex-direction: column;
+	width: 41%;
+	position:relative
+}
+
+.display-none {
+	display: none;
+}
+
+.expanded-doc {
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+
+.expanded-signals {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding-right:5px;
+}
+
+.signal-outer {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	padding: 5px;
+	display: flex;
+	flex-direction: row]
+}
+
+.width-30{
+width:30%}
+
+.signal-values{
+	width:25%;
+	font-size: 14px;
+    margin-left: 4%;
+    color: rgb(107, 104, 104);
+    display:flex;
+    align-items:center;
+}
+
+
+
+
+.names_expanded{
+    font-size: 14px;
+    margin-left: 4%;
+    
+    color: rgb(107, 104, 104);
+    display:flex;
+    align-items:center;
+}
+
+.signal-values-expanded{
+	font-size: 14px;
+    margin-left: 4%;
+    color: rgb(107, 104, 104);
+    display:flex;
+    align-items:center;
+}
+
+
+
+.edit-btn{
+      color: black;
+      position: absolute;
+    font-size: 25px;
+    padding-top: 5px;
+     right: 416px;
+    margin-top: -2px;
+}
+.delete-btn{
+     color: rgb(236, 55, 100);
+    font-size: 25px;
+    padding-top: 5px;
+    right: 385px;
+    margin-top: -4px;
+    position: absolute;
+}
+.close-expanded{
+    
+}
+.edit-delete-icon{
+	display:flex;
+	flex-direction:row;
+	align-items:center; 
+}
+

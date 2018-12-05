@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/associate_dashboard.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="../assets/js/reportSignal.js"></script> -->
+
+
+</head>
+
+<body>
+    <div class="blur-container"></div>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p>|</p>
+                <img class="userLogo" src="https://uc.uxpin.com/files/775795/772509/D-744906.png">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                        <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                    </div> -->
+                <div>
+                    <p class="name">Seema Meena</p>
+                    <p class="email">Seema.Meena@gmail.com</p>
+                    <div class="account">
+                        <a class="acc-btn">My Account</a>
+                        <a class="acc-btn">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="top-container">
+            <div class="head">
+                <p class="heading">Today's Tasks</p>
+            </div>
+
+
+            <button class="button-transparent" href="#carousel-cards" data-slide="prev">
+                <span class="arrow arrow-left icon-prev">
+                    <i class="material-icons">arrow_back_ios</i>
+                </span>
+            </button>
+
+
+            <button class="button-transparent" href="#carousel-cards" data-slide="next">
+                <span class="arrow arrow-right icon-next">
+                    <i class="material-icons">arrow_forward_ios</i>
+                </span>
+            </button>
+
+
+
+            <div id="carousel-cards" data-interval="false" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <!-- Slide -->
+                    <div class="carousel-item active">
+                        <div class="row cardsContainer">
+                            <div class="card">
+                                <div class="card-field">
+                                    <div class="card-head">
+                                        <div class="head-flex">
+                                            <div class="activity">TODAY'S ACTIVITY</div>
+                                            <div class="tasks">0 Tasks Completed</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="complete-task-icon">
+                                            <i class="material-icons font-22 complete-task-circle">fiber_manual_record
+                                            </i>
+                                        </div>
+                                        <div class="task-remains">
+                                            4 Tasks remaining for the day
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-field">
+                                    <div class="name">
+                                        <div class="highlight">KISHORE</div>
+                                    </div>
+                                    <div class="name-dat">Kishore</div>
+                                    <div class="name-logo">
+                                        <img class="img-fluid" src="https://business.talentify.in/users/D.png" alt="Deepjoti">
+                                    </div>
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Task History
+                                        </div>
+                                        <div class="task-details">
+                                            <div class="task-details-row" onclick="popup()">
+                                                <div>
+                                                    <i class="material-icons call-icon"> phone </i>
+                                                </div>
+                                                <div class="task-date">
+                                                    30/11/2018 02:41 PM
+                                                </div>
+                                            </div>
+
+                                            <div class="task-details-row">
+                                                <div>
+                                                    <i class="material-icons call-icon"> phone </i>
+                                                </div>
+                                                <div class="task-date">
+                                                    30/11/2018 02:41 PM
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Last Action Items
+                                        </div>
+
+                                        <div class="task-details-text task-details-row">
+                                            Customer must have made payment was on the payment page but wanted to do it
+                                            alone
+                                        </div>
+
+                                    </div>
+
+                                    <div class="call-btn-container">
+                                        <button class="call-btn">
+                                            <i class="material-icons call-btn-icon"> phone </i>CALL
+                                            <!-- <div>CALL</div> -->
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-field">
+                                    <div class="name">
+                                        <div class="highlight">KISHORE</div>
+                                    </div>
+                                    <div class="name-dat">Kishore</div>
+                                    <div class="name-logo">
+                                        <img class="img-fluid" src="https://business.talentify.in/users/D.png" alt="Deepjoti">
+                                    </div>
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Task History
+                                        </div>
+                                        <div class="task-details">
+                                            <div class="task-details-row">
+                                                <div>
+                                                    <i class="material-icons call-icon"> phone </i>
+                                                </div>
+                                                <div class="task-date">
+                                                    30/11/2018 02:41 PM
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Last Action Items
+                                        </div>
+
+                                        <div class="task-details-text task-details-row">
+                                            Customer must have made payment was on the payment page but wanted to do it
+                                            alone
+                                        </div>
+
+                                    </div>
+
+                                    <div class="call-btn-container">
+                                        <button class="call-btn">
+                                            <i class="material-icons call-btn-icon"> phone </i>CALL
+                                            <!-- <div>CALL</div> -->
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide -->
+                    <div class="carousel-item">
+                        <div class="row cardsContainer">
+                            <div class="card">
+                                <div class="card-field">
+                                    <div class="name">
+                                        <div class="highlight">KISHORE</div>
+                                    </div>
+                                    <div class="name-dat">Kishore</div>
+                                    <div class="name-logo">
+                                        <img class="img-fluid" src="https://business.talentify.in/users/D.png" alt="Deepjoti">
+                                    </div>
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Task History
+                                        </div>
+                                        <div class="task-details">
+                                            <div class="task-details-row">
+                                                <div>
+                                                    <i class="material-icons call-icon"> phone </i>
+                                                </div>
+                                                <div class="task-date">
+                                                    30/11/2018 02:41 PM
+                                                </div>
+                                            </div>
+
+                                            <div class="task-details-row">
+                                                <div>
+                                                    <i class="material-icons call-icon"> phone </i>
+                                                </div>
+                                                <div class="task-date">
+                                                    30/11/2018 02:41 PM
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="task-history">
+                                        <div class="task-heading">
+                                            Last Action Items
+                                        </div>
+
+                                        <div class="task-details-text task-details-row">
+                                            Customer must have made payment was on the payment page but wanted to do it
+                                            alone
+                                        </div>
+
+                                    </div>
+
+                                    <div class="call-btn-container">
+                                        <button class="call-btn">
+                                            <i class="material-icons call-btn-icon"> phone </i>CALL
+                                            <!-- <div>CALL</div> -->
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="card">
+                                    <div class="card-field">
+                                        <div class="name">
+                                            <div class="highlight">KISHORE</div>
+                                        </div>
+                                        <div class="name-dat">Kishore</div>
+                                        <div class="name-logo">
+                                            <img class="img-fluid" src="https://business.talentify.in/users/D.png" alt="Deepjoti">
+                                        </div>
+
+                                        <div class="task-history">
+                                            <div class="task-heading">
+                                                Task History
+                                            </div>
+                                            <div class="task-details">
+                                                <div class="task-details-row">
+                                                    <div>
+                                                        <i class="material-icons call-icon"> phone </i>
+                                                    </div>
+                                                    <div class="task-date">
+                                                        30/11/2018 02:41 PM
+                                                    </div>
+                                                </div>
+
+                                                <div class="task-details-row">
+                                                    <div>
+                                                        <i class="material-icons call-icon"> phone </i>
+                                                    </div>
+                                                    <div class="task-date">
+                                                        30/11/2018 02:41 PM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="task-history">
+                                            <div class="task-heading">
+                                                Last Action Items
+                                            </div>
+
+                                            <div class="task-details-text task-details-row">
+                                                Customer must have made payment was on the payment page but wanted to
+                                                do it
+                                                alone
+                                            </div>
+
+                                        </div>
+
+                                        <div class="call-btn-container">
+                                            <button class="call-btn">
+                                                <i class="material-icons call-btn-icon"> phone </i>CALL
+                                                <!-- <div>CALL</div> -->
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Slide -->
+
+                    </div>
+
+                    <!-- Controls -->
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="popup-container popup">
+            <!-- <i class="fa arrow fa-chevron-circle-left fa-2x"></i> -->
+            <div class="popup-box">
+                <div class="box-top">
+                    <h4 class="history-title">Task History</h4>
+                    <button class="button-transparent cross" onclick="closePopup()"><i class="material-icons ">
+                            close
+                        </i>
+                    </button>
+                </div>
+                <button class="button-transparent arrow slide-left">
+                    <i class="material-icons">arrow_back_ios</i>
+                </button>
+                <div class="cards">
+
+                    <div class="task-card card1">
+                        <div class="row1 card-row">
+                            <img class="card-img" src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                            <div class="details">
+                                <p>Sales Call</p>
+                                <h3>Dell</h3>
+                                <p>Ram Jain</p>
+                            </div>
+                            <div class="task-det">
+                                <p>Finshed</p>
+                                <img class="piechart" src="https://uc.uxpin.com/files/775795/772509/uxpmod_709b53533d51451c8db586a0ae9c98ec_87935026_pie5-708002-fc542d.png">
+                            </div>
+                        </div>
+
+                        <div class="row2 card-row">
+                            <p>Start Time</p>
+                            <p>Duration</p>
+                            <p style="text-align:center;">Task Score</p>
+                        </div>
+
+                        <div class="row3 card-row">
+                            <p>12.30PM</p>
+                            <p>45 Minutes</p>
+                            <div class="stars">
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card card2">
+                        <div class="row1 card-row">
+                            <img class="card-img" src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                            <div class="details">
+                                <p>Sales Call</p>
+                                <h3>Dell</h3>
+                                <p>Ram Jain</p>
+                            </div>
+                            <div class="task-det">
+                                <p>In Process</p>
+                                <div>
+                                    <i class="fa fa-desktop fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row2 card-row">
+                            <p>Start Time</p>
+                            <p>Duration</p>
+                            <p>Task Score</p>
+                        </div>
+
+                        <div class="row3 card-row">
+                            <p>12.30PM</p>
+                            <p>45 Minutes</p>
+                            <div class="stars">
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-card card3">
+                        <div class="row1 card-row">
+                            <img class="card-img" src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                            <div class="details">
+                                <p>Sales Call</p>
+                                <h3>Dell</h3>
+                                <p>Ram Jain</p>
+                            </div>
+                            <div class="task-det">
+                                <p>Scheduled</p>
+                                <div>
+                                    <i class="fa fa-envelope fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row2 card-row">
+                            <p>Start Time</p>
+                            <p>Duration</p>
+                            <p>Task Score</p>
+                        </div>
+
+                        <div class="row3 card-row">
+                            <p>12.30PM</p>
+                            <p>45 Minutes</p>
+                            <div class="stars">
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                                <span class="star-inserted" style="cursor: pointer;">
+                                    <!---->★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="button-transparent arrow slide-right">
+                    <i class="material-icons">
+                        arrow_forward_ios
+                    </i>
+                </button>
+                <div class="border">
+                    <div class="option">
+                        <div><img class="model-img" src="https://business.talentify.in//users/198281/abhinav.png" alt="Abhinav Singh"
+                                title="Abhinav Singh"></div>
+                        <div><i class="material-icons model-icon pointer text-danger"> favorite_border </i></div>
+                        <div><i class="material-icons model-icon pointer"> message </i></div>
+                        <div><i class="material-icons model-icon pointer"> share </i></div>
+                        <div><i class="material-icons model-icon pointer" style="color: rgb(163, 163, 163);"> note </i></div>
+                        <div><i class="material-icons model-icon pointer"> wb_incandescent </i></div>
+                    </div>
+                    <div class="play-track">
+
+                    </div>
+                    <div class="media-btn">
+                        <button class="button sound-btn"><i class="material-icons ">volume_up</i></button>
+                        <button class="button play-btn"><i class="material-icons large">play_arrow</i></button>
+                        <button class=" button forward-btn"><i class="material-icons ">fast_forward</i></button>
+                    </div>
+                    <div class="graph-box">
+                        <div id="graph"></div>
+                    </div>
+                    <div class="det-container">
+                        <div class="map-image">
+                            <p>Location</p>
+                            <div class="map">
+
+                            </div>
+                        </div>
+                        <div class="action-item">
+                            <p>Action Items</p>
+                            <div class="items">
+                                <div>I just have to walk him through payment tomorrow​​</div>
+                                <div>I just have to walk him through payment tomorrow​​</div>
+                                <div>I just have to walk him through payment tomorrow​​</div>
+                                <div>I just have to walk him through payment tomorrow​​</div>
+                                <div>I just have to walk him through payment tomorrow​​</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="candit">
+                        <div class="basic-pro">
+                            <div class="bot-img"> <img src="https://business.talentify.in//users/198281/abhinav.png"></div>
+                            <div class="info-1">
+                                <h2>Abhinav Singh</h2>
+                                <p class="post">India Sales</p>
+                                <div class="feedback">
+                                    <p>Average Feedback</p>
+                                    <div class="stars">
+                                        <span class="star-inserted" style="cursor: pointer;">
+                                            <!---->★</span>
+                                        <span class="star-inserted" style="cursor: pointer;">
+                                            <!---->★</span>
+                                        <span class="star-inserted" style="cursor: pointer;">
+                                            <!---->★</span>
+                                        <span class="star-inserted" style="cursor: pointer;">
+                                            <!---->★</span>
+                                        <span class="star-inserted" style="cursor: pointer;">
+                                            <!---->★</span>
+                                    </div>
+                                </div>
+                                <div class="score">Talentify Score: 2</div>
+                            </div>
+                            <div class="info-2">
+
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="close-container">
+                    <button class="close-button" onclick="closePopup()">Close</button>
+                </div>
+                <!-- <i class="fa arrow fa-chevron-circle-right fa-2x"></i> -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<script src="../assets/js/dashboard.js"></script>
+<script src="../assets/js/showMenu.js"></script>
+<script src="../assets/js/associate_graph.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+</html>
+
+<script>
+    $('#carousel-cards').carousel({
+        wrap:false
+    })
+</script>

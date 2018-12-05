@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reports.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/reports.js"></script>
+    <script src="../assets/js/showMenu.js"></script>
+
+</head>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+//   $("#footer").load("footer.html"); 
+});
+</script> 
+<body>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p class="divideSymbol">|</p>
+                <img class="userLogo" data-id="38dd1df2c5454cb1bb91fe24beed4cd2" src="https://uc.uxpin.com/files/775795/772509/D-744906.png">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                    <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                </div> -->
+                <div >
+                    <p class = "name">Seema Meena</p>
+                    <p class = "email">Seema.Meena@gmail.com</p>
+                    <div class = "account">
+                        <a class = "acc-btn">My Account</a>
+                        <a class = "acc-btn">Logout</a>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+    </div>
+    <div class="header"></div>
+    <div class="mainContainer">
+        <div class="head">
+            <div class="boxContainer">
+
+            </div>
+            <div class="link">
+                <div class="team-link">
+                    <a class="activeLink">Team</a>
+                </div>
+
+                <p style="margin-right: 15px; color:gray">|</p>
+
+                <a href = "reportSignal.html" style="color: gray;text-decoration: none;font-weight: bold;">Signals</a>
+            </div>
+        </div>
+        <div id="chart">
+
+        </div>
+        <select id="drop">
+            <option>Show All</option>
+        </select>
+        <div class="table">
+            <table id="table">
+                <tr>
+                    <th>Team Name</th>
+                    <th>Talentify Score</th>
+                    <th>Talk Ratio</th>
+                    <th>Win Rate</th>
+                    <th>Utilization</th>
+                    <th>Sentiment Score</th>
+                </tr>
+            </table>
+        </div>
+        <div class="pages">
+            <div class="page-numbers">
+                <div class = "page">
+                    <i class="fa fa-angle-double-left"></i>
+                </div>
+                <div class = "page page1">
+                    1
+                </div>
+                <div class = "page">
+                    2
+                </div>
+                <div class = "page">
+                    3
+                </div>
+                <div class = "page" >
+                    4
+                </div>
+                <div class = "page">
+                    5
+                </div>
+                <div class = "page">
+                    <i class="fa fa-angle-double-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

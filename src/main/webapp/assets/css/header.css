@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: rgb(232, 232, 232);
+    margin : 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.main-header header {
+	display: flex;
+	/* position: fixed; */
+	/* width : 100%; */
+	justify-content: left;
+	align-items: center;
+	height: 55px;
+
+	background-color: white;
+	top: 0;
+	left: 0;
+}
+
+.talentify h3 {
+	margin: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.talentify h3 a{
+	color: white;;
+	text-decoration: none;
+}
+
+.talentify {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+	width: 120px;
+	justify-content: center;
+	height: 100%;
+	background-color: #eb384f;
+	margin-right: 20px;
+}
+
+.linked {
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+	margin-right: auto !important;
+}
+
+.a_tag {
+	cursor: pointer;
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+	font-family: 'Lato', sans-serif !important;
+	padding-right: 50px;
+}
+
+.active {
+	color: #eb384f;
+}
+
+.right {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 50px;
+}
+
+.right a {
+	margin-right: 10px;
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+}
+
+.right p {
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	margin-top: 6px;
+	margin-bottom: 5px;
+	color: black;
+}
+
+.fa-caret-down {
+	font-size: 22px !important;
+	color: rgb(235, 56, 79);
+}
+
+.userLogo {
+	opacity: 1;
+	mix-blend-mode: normal;
+	border-radius: 0px;
+	width: 52px;
+	height: 52px;
+}
+
+.profile_navbar {
+	display: none;
+}
+
+.show {
+	display: flex;
+	flex-direction: row;
+	width: 289px;
+	height: 161px;
+	padding: 10px;
+	position: absolute;
+	right: 40px;
+	top: 50px;
+	background: white;
+	justify-content: flex-start;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px;
+	z-index: 1;
+}
+
+.profile_navbar_name {
+	font-size: 14px;
+	margin: 10px 0px 5px 0px;
+	color: rgb(48, 48, 48);
+	font-weight: bold;
+	text-align: left;
+}
+
+.profile_navbar_email {
+	font-size: 12px;
+	margin: 10px 0px 5px 0px;
+	color: rgb(117, 117, 117);
+	font-weight: bold;
+}
+
+.profile_navbar_account {
+	display: flex;
+	flex-direction: column;
+	margin-top: 6px;
+	width: 285px;
+	justify-content: space-between;
+	/* align-items: center; */
+	height: 70px;
+}
+
+.profile_navbar_acc_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 103px;
+	height: 30px;
+	background: rgb(235, 56, 79);
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.profile_navbar_image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 10px;
+	border: 1px solid red;
+}
+
+.profile_navbar_menu_links {
+	margin-left: 25px;
+}
+
+.highlight_navbar.a_tag{
+	color: #eb384f ;
+}

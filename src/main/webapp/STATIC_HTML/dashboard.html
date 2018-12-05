@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../assets/js/reportSignal.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/showMenu.js"></script>
+
+</head>
+
+
+<body>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p>|</p>
+                <img class="userLogo" src="https://uc.uxpin.com/files/775795/772509/D-744906.png">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                        <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                    </div> -->
+                <div>
+                    <p class="name">Seema Meena</p>
+                    <p class="email">Seema.Meena@gmail.com</p>
+                    <div class="account">
+                        <a class="acc-btn">My Account</a>
+                        <a class="acc-btn">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <div id="header"></div>
+    <div class="container">
+        <div class="top-container">
+            <div class="head">
+                <p class="heading">Today's Tasks</p>
+                <div class="boxContainer">
+                    <div class="box boxOn">
+                        <div class="dot green"></div>
+                        <p><b>Ongoing</b></p>
+                    </div>
+                    <div class="box boxSch">
+                        <div class="dot blue"></div>
+                        <p><b>Scheduled</b></p>
+                    </div>
+                    <div class="box boxCom">
+                        <div class="dot red"></div>
+                        <p><b>Completed</b></p>
+                    </div>
+                </div>
+            </div>
+            <button class="button-transparent">
+                <div class="arrow arrow-left">
+                    <i class="material-icons">arrow_back_ios</i>
+                </div>
+            </button>
+            <button class="button-transparent">
+                <div class="arrow arrow-right">
+                    <i class="material-icons">
+                        arrow_forward_ios
+                    </i>
+                </div>
+            </button>
+            <div class="cardsContainer">
+                <!-- <i class="fa arrow fa-chevron-circle-left fa-2x"></i> -->
+                <div class="cardCenter">
+                    <div class="card card1">
+                        <div class="row1 row">
+                            <img src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                            <div class="details">
+                                <p>Sales Call</p>
+                                <h3>Dell</h3>
+                                <p>Ram Jain</p>
+                            </div>
+                            <div class="task-detail">
+                                <p>Finshed</p>
+                                <img class="piechart" src="https://uc.uxpin.com/files/775795/772509/uxpmod_709b53533d51451c8db586a0ae9c98ec_87935026_pie5-708002-fc542d.png">
+                            </div>
+                        </div>
+
+                        <div class="row2 row">
+                            <p>Start Time</p>
+                            <p>Duration</p>
+                            <p style="text-align:center;">Task Score</p>
+                        </div>
+
+                        <div class="row3 row">
+                            <p>12.30PM</p>
+                            <p>45 Minutes</p>
+                            <div class="stars">
+                                <svg viewBox="0 0 24 24">
+                                    <g>
+                                        <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <g>
+                                        <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <g>
+                                        <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 24 24">
+                                    <g>
+                                        <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                    </g>
+                                </svg>
+                                <svg viewBox="0 0 60 60">
+                                    <path d="M10.9,52c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.5-0.7-0.4-1.1l5.9-18.5L0.4,20.7c-0.3-0.3-0.5-0.7-0.4-1.1  c0.1-0.4,0.5-0.7,0.9-0.7h19.1l5.9-18.2C26.2,0.3,26.6,0,27,0c0.4,0,0.8,0.3,0.9,0.7l5.9,18.2H53c0.4,0,0.8,0.3,0.9,0.7  c0.1,0.4,0,0.9-0.4,1.1L38.1,32.2L44,50.6c0.1,0.4,0,0.9-0.4,1.1c-0.3,0.3-0.8,0.3-1.2,0L27,40.5L11.5,51.8  C11.3,51.9,11.1,52,10.9,52z M4,20.9L17.7,31c0.3,0.3,0.5,0.7,0.4,1.1l-5.2,16.2l13.6-9.9c0.3-0.3,0.8-0.3,1.2,0l13.6,9.9L36,32.2  c-0.1-0.4,0-0.8,0.4-1.1L50,20.9H33.1c-0.4,0-0.8-0.3-0.9-0.7L27,4.2l-5.2,16c-0.1,0.4-0.5,0.7-0.9,0.7H4z"
+                                        style="fill: rgb(153, 153, 153);"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card2">
+                    <div class="row1 row">
+                        <img src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                        <div class="details">
+                            <p>Sales Call</p>
+                            <h3>Dell</h3>
+                            <p>Ram Jain</p>
+                        </div>
+                        <div class="task-detail">
+                            <p>In Process</p>
+                            <div>
+                                <i class="fa fa-desktop fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row2 row">
+                        <p>Start Time</p>
+                        <p>Duration</p>
+                        <p>Task Score</p>
+                    </div>
+
+                    <div class="row3 row">
+                        <p>12.30PM</p>
+                        <p>45 Minutes</p>
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+
+                            <svg viewBox="0 0 60 60">
+                                <path d="M10.9,52c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.5-0.7-0.4-1.1l5.9-18.5L0.4,20.7c-0.3-0.3-0.5-0.7-0.4-1.1  c0.1-0.4,0.5-0.7,0.9-0.7h19.1l5.9-18.2C26.2,0.3,26.6,0,27,0c0.4,0,0.8,0.3,0.9,0.7l5.9,18.2H53c0.4,0,0.8,0.3,0.9,0.7  c0.1,0.4,0,0.9-0.4,1.1L38.1,32.2L44,50.6c0.1,0.4,0,0.9-0.4,1.1c-0.3,0.3-0.8,0.3-1.2,0L27,40.5L11.5,51.8  C11.3,51.9,11.1,52,10.9,52z M4,20.9L17.7,31c0.3,0.3,0.5,0.7,0.4,1.1l-5.2,16.2l13.6-9.9c0.3-0.3,0.8-0.3,1.2,0l13.6,9.9L36,32.2  c-0.1-0.4,0-0.8,0.4-1.1L50,20.9H33.1c-0.4,0-0.8-0.3-0.9-0.7L27,4.2l-5.2,16c-0.1,0.4-0.5,0.7-0.9,0.7H4z"
+                                    style="fill: rgb(153, 153, 153);"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card3">
+                    <div class="row1 row">
+                        <img src="https://uc.uxpin.com/files/775795/772509/Images-13-4233a6.png">
+                        <div class="details">
+                            <p>Sales Call</p>
+                            <h3>Dell</h3>
+                            <p>Ram Jain</p>
+                        </div>
+                        <div class="task-detail">
+                            <p>Scheduled</p>
+                            <div>
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row2 row">
+                        <p>Start Time</p>
+                        <p>Duration</p>
+                        <p>Task Score</p>
+                    </div>
+
+                    <div class="row3 row">
+                        <p>12.30PM</p>
+                        <p>45 Minutes</p>
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 24 24">
+                                <g>
+                                    <path src="http://www.w3.org/2000/svg" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 60 60">
+                                <path d="M10.9,52c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.5-0.7-0.4-1.1l5.9-18.5L0.4,20.7c-0.3-0.3-0.5-0.7-0.4-1.1  c0.1-0.4,0.5-0.7,0.9-0.7h19.1l5.9-18.2C26.2,0.3,26.6,0,27,0c0.4,0,0.8,0.3,0.9,0.7l5.9,18.2H53c0.4,0,0.8,0.3,0.9,0.7  c0.1,0.4,0,0.9-0.4,1.1L38.1,32.2L44,50.6c0.1,0.4,0,0.9-0.4,1.1c-0.3,0.3-0.8,0.3-1.2,0L27,40.5L11.5,51.8  C11.3,51.9,11.1,52,10.9,52z M4,20.9L17.7,31c0.3,0.3,0.5,0.7,0.4,1.1l-5.2,16.2l13.6-9.9c0.3-0.3,0.8-0.3,1.2,0l13.6,9.9L36,32.2  c-0.1-0.4,0-0.8,0.4-1.1L50,20.9H33.1c-0.4,0-0.8-0.3-0.9-0.7L27,4.2l-5.2,16c-0.1,0.4-0.5,0.7-0.9,0.7H4z"
+                                    style="fill: rgb(153, 153, 153);"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- <i class="fa arrow fa-chevron-circle-right fa-2x"></i> -->
+            </div>
+
+        </div>
+        <div class="link">
+            <a class="activeLink link-1">Team</a>
+            <p>|</p>
+            <a class="link-2">Individual</a>
+        </div>
+        <div class="graph-container">
+
+            <div class="choose">
+                <select class="select">
+                    <option value="">Sales Team Jaipur</option>
+                    <option value="">Sales Team Chennai</option>
+                    <option value="">Sales Team Jaipur</option>
+                    <option value="">Talantify Sales Team</option>
+                </select>
+                <div class="vs"><b>Vs</b></div>
+                <select class="select">
+                    <option value="">Success Profile</option>
+                    <option value="">Sales Team Jaipur</option>
+                    <option value="">Sales Team Patna</option>
+                    <option value="">Talantify Sales Team</option>
+                </select>
+
+            </div>
+            <div class="line">
+                <div class="line-content">
+                    <div class="round activeDiv">
+                        <p>All Stages</p>
+                    </div>
+                    <div class="round">
+                        <p>Cold Call</p>
+                    </div>
+                    <div class="round">
+                        <p>Demo</p>
+                    </div>
+                    <div class="round">
+                        <p>Proposal</p>
+                    </div>
+                    <div class="round">
+                        <p>Contract</p>
+                    </div>
+                    <div class="round">
+                        <p>Contract</p>
+                    </div>
+                    <div class="round">
+                        <p>Contract</p>
+                    </div>
+                    <div class="round">
+                        <p>Contract</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div id="container"></div>
+                <div>
+
+                </div>
+            </div>
+            <div class="compare">
+                <div class="compareColumn">
+                    <div class="number">
+                        <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p>
+                    </div>
+                    <p class="red">Utilization ( % )</p>
+                </div>
+
+                <div class="compareColumn">
+                    <div class="number">
+                        <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p>
+                    </div>
+                    <p class="red">Talk Ratio ( % )</p>
+                </div>
+
+                <div class="compareColumn">
+                    <div class="number">
+                        <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p>
+                    </div>
+                    <p class="red">Sentiment ( % ) </p>
+                </div>
+
+                <div class="compareColumn">
+                    <div class="number">
+                        <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p>
+                    </div>
+                    <p class="red">Win Rate ( % )</p>
+                </div>
+
+                <div class="compareColumn">
+                    <div class="number">
+                        <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p>
+                    </div>
+                    <p class="red">Duration ( Minutes )</p>
+                </div>
+
+                <div class="compareColumn">
+                    <div class="number">
+                        <!-- <p class="blue">73</p>
+                        <p>Vs</p>
+                        <p class="green">84</p> -->
+                        <p class="total-value">7300000</p>
+                    </div>
+                    <p class="red">Target ( Rs )</p>
+                </div>
+            </div>
+            <div class="pipeline">
+                <div class="header">
+                    <div class="table-head active-link">Pipeline</div>
+                    <div class="table-head">Calender</div>
+                    <div class="table-head">Skill</div>
+                </div>
+                <div class="table">
+
+                    <div class="table-cards" >
+                        <div class="column">
+                            <div class="topics">
+                                <div>Lead In</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card">
+                                    <div class="cardHead center">
+                                        <p> Shivani Rastogi</p>
+
+                                    </div>
+                                    <div class="cardDesc">
+                                        <p>Unichem Laboratories Ltd.</p>
+                                        <p>shivani_rastogi@gmail.com</p>
+                                    </div>
+
+                                    <div class="cardBottom">
+                                        <div class="dot table-green"></div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+
+                                <div class="table-card">
+                                    <div class="cardHead center">
+                                        <p> Shivani Rastogi</p>
+                                    </div>
+                                    <div class="cardDesc">
+                                        <p>Unichem Laboratories Ltd.</p>
+                                        <p>shivani_rastogi@gmail.com</p>
+                                    </div>
+
+                                    <div class="cardBottom">
+                                        <div class="dot table-green"></div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+
+                                <div class="table-card">
+                                    <div class="cardHead center">
+                                        <p> Shivani Rastogi</p>
+                                    </div>
+                                    <div class="cardDesc">
+                                        <p>Unichem Laboratories Ltd.</p>
+                                        <p>shivani_rastogi@gmail.com</p>
+                                    </div>
+
+                                    <div class="cardBottom">
+                                        <div class="dot table-green"></div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="column">
+                            <div class="topics">
+                                <div>Cold-Call</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-green">
+                                    
+                                        <p class="table-green">Call</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+                                    <div class="cardDesc">
+                                        <p>Unichem Laboratories Ltd.</p>
+                                        <p>shivani_rastogi@gmail.com</p>
+                                    </div>
+
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+
+                                <div class="table-card ">
+                                    <div class="cardHead border-green">
+                                        
+                                        <p class="table-green">Call</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+                                    <div class="cardDesc">
+                                        <p>Unichem Laboratories Ltd.</p>
+                                        <p>shivani_rastogi@gmail.com</p>
+                                    </div>
+
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="column">
+                            <div class="topics">
+                                <div>Demo</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-blue">
+                                        
+                                        <p class="table-blue">Webinar</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+
+                                    <div class="cardDesc">
+                                        <p>Lorem ipsum dolor amet</p>
+                                        <p>Aliquam at porttitor sem.</p>
+                                    </div>
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="topics">
+                                <div>Proposal</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-red">
+                                        
+                                        <p class="table-red">Email</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+
+                                    <div class="cardDesc">
+                                        <p>Lorem ipsum dolor amet</p>
+                                        <p>Aliquam at porttitor sem.</p>
+                                    </div>
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column ">
+                            <div class="topics">
+                                <div>Contract</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-red">
+                                        
+                                        <p class="table-red">Email</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+
+                                    <div class="cardDesc">
+                                        <p>Lorem ipsum dolor amet</p>
+                                        <p>Aliquam at porttitor sem.</p>
+                                    </div>
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="topics">
+                                <div>Contract</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-red">
+                                        
+                                        <p class="table-red">Email</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+
+                                    <div class="cardDesc">
+                                        <p>Lorem ipsum dolor amet</p>
+                                        <p>Aliquam at porttitor sem.</p>
+                                    </div>
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="topics">
+                                <div>Contract</div>
+                            </div>
+                            <div class="cards-box">
+                                <div class="table-card ">
+                                    <div class="cardHead border-red">
+                                        
+                                        <p class="table-red">Email</p>
+                                        <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i>
+
+                                    </div>
+
+                                    <div class="cardDesc">
+                                        <p>Lorem ipsum dolor amet</p>
+                                        <p>Aliquam at porttitor sem.</p>
+                                    </div>
+                                    <div class="cardBottom">
+                                        <div class="dates">18/11/18</div>
+                                        <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calender-container">
+                        <div class="cal-week">
+                            <div class="week-choose">
+                                <button class="button-transparent"><i class="material-icons pointer red-icon">date_range</i></button>
+                                <button class="button-transparent"><i class="material-icons  pointer red-icon">
+                                        arrow_back </i></button>
+                                <div>17 Feb - 24Feb</div>
+                                <button class="button-transparent"><i class="material-icons pointer red-icon">
+                                        arrow_forward </i></button>
+                            </div>
+                        </div>
+                        <div class="cal-columns">
+                            <div class="cal-column">
+                                <div class="week-day">Sunday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-red-1">
+                                            <!--  -->
+                                            <p class="table-red">Email</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+
+                                        <div class="cardDesc">
+                                            <p>Lorem ipsum dolor amet</p>
+                                            <p>Aliquam at porttitor sem.</p>
+                                        </div>
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="cal-column">
+                                <div class="week-day">Monday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cal-column">
+                                <div class="week-day">Tuesday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-blue-1">
+                                            <!--  -->
+                                            <p class="table-blue">Webinar</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+
+                                        <div class="cardDesc">
+                                            <p>Lorem ipsum dolor amet</p>
+                                            <p>Aliquam at porttitor sem.</p>
+                                        </div>
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="cal-column today">
+                                <div class="week-day">Wednesday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-blue-1">
+                                            <!--  -->
+                                            <p class="table-blue">Webinar</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+
+                                        <div class="cardDesc">
+                                            <p>Lorem ipsum dolor amet</p>
+                                            <p>Aliquam at porttitor sem.</p>
+                                        </div>
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-blue-1">
+                                            <!--  -->
+                                            <p class="table-blue">Webinar</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+
+                                        <div class="cardDesc">
+                                            <p>Lorem ipsum dolor amet</p>
+                                            <p>Aliquam at porttitor sem.</p>
+                                        </div>
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cal-column">
+                                <div class="week-day">Thursday</div>
+                                <div class="cal-cards">
+
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-blue-1">
+                                            <!--  -->
+                                            <p class="table-blue">Webinar</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+
+                                        <div class="cardDesc">
+                                            <p>Lorem ipsum dolor amet</p>
+                                            <p>Aliquam at porttitor sem.</p>
+                                        </div>
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="cal-column">
+                                <div class="week-day">Friday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cal-column">
+                                <div class="week-day">Saturday</div>
+                                <div class="cal-cards">
+                                    <div class="table-card card-shadow">
+                                        <div class="cardHead border-green-1">
+                                            <!--  -->
+                                            <p class="table-green">Call</p>
+                                            <!-- <i class="fa fa-ellipsis-v" (click)="showBlock($event,key)"></i> -->
+
+                                        </div>
+                                        <div class="cardDesc">
+                                            <p>Unichem Laboratories Ltd.</p>
+                                            <p>shivani_rastogi@gmail.com</p>
+                                        </div>
+
+                                        <div class="cardBottom">
+                                            <!-- <div class="dates">18/11/18</div> -->
+                                            <div class="img-box"><img class="img" src="https://uc.uxpin.com/files/775795/772509/Images-07-64bee7.png"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="cal-card card-shadow">
+                                        <div class="cal-card-head"></div>
+                                        <div class="cal-card-desc">
+                                            <div class="cal-name">Shivani Rastogi</div>
+                                            <div class="cal-company">Unicam Pvt Limited</div>
+                                            <div class="pro-img"><img src="https://uc.uxpin.com/files/775795/772509/Images-07-bfa5be.png"></div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

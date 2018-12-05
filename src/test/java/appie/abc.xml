@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pipeline>
+	<name>India Insurance Pipeline</name>
+	<teamids>
+		<teamid>5471</teamid>
+	</teamids>
+	<productids>
+		<productid>227</productid>
+	</productids>
+	<stages>
+		<stage>
+			<id>1</id>
+			<name>Renewal Reminder </name>
+			<tasks>
+				<description>Reminder Call</description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_CALL_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>dhfkjsd kfjhskdj</description>
+				<id>2</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_EMAIL_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>Description </description>
+				<id>3</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_EMAIL_TASK</tasktype>
+			</tasks>
+		</stage>
+		<stage>
+			<id>2</id>
+			<name>Payment Link</name>
+			<tasks>
+				<description>This is an email to be sent to renew insurance
+				</description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_EMAIL_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>Description </description>
+				<id>2</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_CALL_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>Description </description>
+				<id>3</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_EMAIL_TASK</tasktype>
+			</tasks>
+		</stage>
+		<stage>
+			<id>3</id>
+			<name>Payment Followup</name>
+			<tasks>
+				<description>This is a call to followup on the payment</description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_CALL_TASK</tasktype>
+			</tasks>
+		</stage>
+		<stage>
+			<id>4</id>
+			<name>Send Policy</name>
+			<tasks>
+				<description>Send policy with Email</description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_EMAIL_TASK</tasktype>
+			</tasks>
+		</stage>
+		<stage>
+			<id>5</id>
+			<name>Confirmation </name>
+			<tasks>
+				<description>A call to confirm that the client received the policy
+				</description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_CALL_TASK</tasktype>
+			</tasks>
+		</stage>
+		<stage>
+			<id>6</id>
+			<name>Stage 6</name>
+			<tasks>
+				<description>Description </description>
+				<id>1</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_WEBINAR_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>Description </description>
+				<id>2</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_PRESENTATION_TASK</tasktype>
+			</tasks>
+			<tasks>
+				<description>Description </description>
+				<id>3</id>
+				<isSelected>false</isSelected>
+				<tasktype>SALES_CALL_TASK</tasktype>
+			</tasks>
+		</stage>
+	</stages>
+</pipeline>

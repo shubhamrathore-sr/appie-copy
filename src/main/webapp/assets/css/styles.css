@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: rgb(232, 232, 232);
+    margin : 0;
+	font-family: 'Lato', sans-serif;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+
+
+/*
+Modifying the scroll bar across the whole application
+*/
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	width: 5px;
+	height:5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #999999 !important ;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #d1d1d1 !important; 
+	border:1px solid #ebebeb !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+.flex{
+	display:flex;
+}
+
+
+.button-transparent{
+	background:transparent;
+	border:0;
+	cursor:pointer;	
+	outline: none;
+}
+
+
+.position-relative{
+	position:relative;
+}

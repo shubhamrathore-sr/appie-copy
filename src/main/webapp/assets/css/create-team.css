@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: rgb(232, 232, 232);
+    margin : 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.main {
+	background-color: #f3f3f4;
+	min-height: 100%;
+	margin-top: 50px;
+}
+
+.main-container {
+	height: auto;
+	width: 1256;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title-head p {
+	font-size: 28px;
+	margin: 0;
+	width: 170px;
+	height: 34px;
+	font-weight: normal;
+}
+
+.group-desc {
+	display: flex;
+}
+
+.desc {
+	margin-right: 20px;
+	margin-top: 20px;
+	color: #959596;
+}
+
+.types h4 {
+	margin-bottom: 0px !important;
+	margin-left: 76px;
+}
+
+.data-field {
+	border-radius: 5px;
+	border-style: none;
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(206, 205, 205);
+	outline: none;
+}
+
+.desc>input {
+	width: 501px;
+	height: 41px;
+	font-size: 14px;
+	color: #9B9B9B;
+}
+
+.text-container {
+	background-color: white;
+	/* padding: 2%; */
+	width: 631px;
+	border-radius: 3px;
+	border: 1px solid rgb(209, 209, 209);
+}
+
+.text-field {
+	width: 631px;
+	height: 147px;
+	padding: 5px;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif; !important;
+	border-radius: 4px;
+	border: 1px solid rgb(209, 209, 209);
+	outline: none;
+}
+
+.skill {
+	width: 100%;
+	height: 40px;
+	padding: 3px;
+	color: #79797a;
+	border-radius: 3px;
+	border: 1px solid rgb(209, 209, 209);
+	background-color: white;
+	outline: none;
+}
+
+.skill-find {
+	width: 631px;
+	margin-top: 0px;
+}
+
+.skill-find>input {
+	border: none;
+}
+
+.skill-select {
+	width: 40%;
+}
+
+.skill-select>div {
+	margin-right: 0px;
+	/* height: 100%; */
+}
+
+.skill-course {
+	width: 476px;
+	height: 383px;
+	margin-left: 76px;
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid rgb(206, 205, 205);
+}
+
+.buttons {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-end;
+	/* height: 40px; */
+}
+
+.btn {
+	padding: 0px;
+}
+
+.create {
+	width: 148px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background-color: rgb(255, 0, 85);
+}
+
+.types {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.box {
+	margin-left: 20px;
+	width: 18px;
+	height: 18px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+}
+
+.heading {
+	margin-bottom: 20px;
+	/* width: 114px; */
+	height: 24px;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+
+h4 {
+	margin: 0;
+}
+
+.add input {
+	width: 500px;
+	height: 41px;
+	border-radius: 4px;
+	border: 1px solid rgb(206, 205, 205);
+	outline: none;
+	padding: 5px;
+}
+
+h3 {
+	font-size: 25px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.group-name-addMembers {
+	display: flex;
+	font-size: 16px;
+	flex-direction: column;
+	width: 50%;
+	flex-direction: column;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.edit-add-member-field {
+	width: 100%;
+	height: 41px;
+	font-size: 15px;
+	border-radius: 4px;
+	border: 1px solid rgb(206, 205, 205);
+	outline: none;
+	padding: 5px;
+}
+
+.table-head {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 14px 18px;
+	border-top: 1px solid rgb(201, 197, 197) !important;
+	border-bottom: 1px solid rgb(201, 197, 197) !important;
+}
+
+.table-header-column {
+	background: white;
+	border-top: 1px solid rgb(201, 197, 197) !important;
+	border-bottom: 1px solid rgb(201, 197, 197) !important;
+	color: #555555;
+}
+
+img.masthead {
+	width: 40px;
+	height: 40px;
+	border-radius: 0px !important;
+	padding: 0% !important;
+	box-shadow: 2px 4px 9px 1px #dbd5d5;
+	margin: 5px;
+}
+
+.table-div {
+	margin-top: 34px;
+}
+
+table {
+	border-collapse: separate !important;
+	border-spacing: 0px 5px !important;
+}
+
+.table-data {
+	text-align: center;
+	border: 0;
+	color: #555555;
+	font-size: 14px;
+	padding: 5px 0px;
+}
+
+.table-row {
+	color: #555555;
+	border-top: 1px solid rgb(201, 197, 197) !important;
+	border-bottom: 1px solid rgb(201, 197, 197) !important;
+	background: white;
+	margin: 5px;
+	box-shadow: 2px 4px 13px 2px rgb(212, 209, 209) !important;
+}
+
+.close-icon {
+	color: #555555;
+	font-size: 1.3rem !important;
+}
+
+.dropdown-container {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	min-width: 230px;
+	border: 1px solid #ddd;
+	z-index: 1;
+	width: 100%;
+	max-height: 400px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.dropdown-content div {
+	color: black;
+	padding: 3px 12px;
+	text-decoration: none;
+	display: block;
+}
+
+.show {
+	display: block;
+}
+
+.pagination-container {
+	width: 100%;
+}
+
+.pagination-count {
+	float: left;
+	background-color: white !important;
+	border: 1px solid #ccc !important;
+	margin-top: 10px !important;
+	padding: 10px !important;
+	border-radius: 6px !important;
+	margin-bottom: 10px !important;
+	font-size: 16px;
+}
+
+.pagination-btn-group {
+	float: right;
+	background-color: white !important;
+	border: 1px solid #ccc !important;
+	margin-top: 10px !important;
+	padding: 0px !important;
+	border-radius: 6px !important;
+	margin-bottom: 10px !important;
+	font-size: 16px;
+}
+
+.pagination-btn-group button {
+	color: #eb384f;
+	background: transparent;
+	border: 0px;
+	padding: 0.7rem 1.4rem;
+}
+
+.pagination-btn-group  button:hover {
+	background: linear-gradient(to bottom, gainsboro 0%, gainsboro 100%)
+		!important;
+	border: 0px !important;
+	border-radius: 0px !important;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.searchTableField {
+	border-radius: 4px;
+	border: 1px solid rgb(206, 205, 205);
+	outline: none;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.org-member-name {
+	float: left;
+}
+
+.org-image {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.org-member-container {
+	display: flex !important;
+	border-bottom: 1px solid #8080803b;
+	display: flex;
+	border-bottom: 1px solid #8080803b;
+	align-items: center;
+	background: white;
+	width: 96%;
+}
+
+.orgMemChckBox {
+	width: 16px !important;
+	margin-left: auto;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.mandatory{color:red;}
+
+
+.group-desc.create_team_name {
+	    float: left;
+    width: 621px;
+
+}
+
+.create-team-desc .skill-find{
+	margin-top: 0px;
+}

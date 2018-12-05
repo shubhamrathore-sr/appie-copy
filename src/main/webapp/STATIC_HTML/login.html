@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css" />
+
+</head>
+<body>
+<div class="main">
+  <div class="login-container">
+    <img class="img" src="../assets/logo.png">
+    <h2 class="welcome">Welcome</h2>
+
+    <form class="login-form" name="form">
+      <div class="field-container">
+        <input class="field" type="email" name="email" placeholder="Enter Email"
+          required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      </div>
+      <div class="field-container">
+        <input class="field" name="password" type="password"placeholder="Password"
+          required pattern="^.{4,16}$" />
+      
+      </div>
+      <button type = "submit" class="btn" href="reports.html" onclick="window.location='reports.html'">Login</button>
+    </form>
+    <p class="company">ISTAR Skill Development Pvt. Ltd. © 2018</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>

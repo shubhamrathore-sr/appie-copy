@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Products</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/addProduct.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p>|</p>
+                <img class="userLogo" data-id="38dd1df2c5454cb1bb91fe24beed4cd2" src="https://uc.uxpin.com/files/775795/772509/D-744906.png"
+                    style="">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                            <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                        </div> -->
+                <div>
+                    <p class="name">Seema Meena</p>
+                    <p class="email">Seema.Meena@gmail.com</p>
+                    <div class="account">
+                        <a class="acc-btn">My Account</a>
+                        <a class="acc-btn">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="btn-container">
+            <div style="width:100%">
+                <a href="products.html"><i class="material-icons arrow-back">
+                        arrow_back
+                    </i></a>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <a href="#" rel="product-details" class="tab active">Product Details</a>
+            <a href="#" rel="documents" class="tab">Documents</a>
+            <a href="#" rel="signals" class="tab">Signals</a>
+        </div>
+        <div class="content">
+            <div id="product-details">
+                <div class="upload">
+                    <div class="upload-img">
+                        <i class="material-icons imgae-cloudicon cloud font-36"> cloud_upload </i>
+                    </div>
+                    <input type="file">
+                </div>
+                <div class="text-field">
+                    <div class="desc">
+                        <label class="heading">Name</label>
+                        <input type="text" class="data-field name-input">
+                    </div>
+                    <div class="desc">
+                        <label class="heading">Description</label>
+                        <textarea class="data-field desc-input"></textarea>
+                    </div>
+                </div>
+                <div class="buttons file-next">
+                    <div></div>
+                    <a href = "#" rel = "documents" class="next">Next</a>
+                </div>
+            </div>
+            <div id="documents">
+                <div class="file-holder">
+                    <div class="file-list">
+                        <div class="file">
+                            <div class="choose">
+                                <button class="choose-btn">Choose File</button>
+                                <input type="file">
+                            </div>
+                            <div>
+                                <i class="material-icons remove delete-document-icon pointer"> close </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-btn">
+                        <i class="material-icons add font-36 add-document-input pointer" ngbtooltip="Add Document(s)">
+                            add_circle </i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="next">Previous</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+            <div id="signals">
+                <div class="file-holder">
+                    <div class="signal-list">
+                        <div class="signal-row">
+                            <!-- <div class="choose"> -->
+                            <input class="input-field" type="text" placeholder="Enter Signal Script...">
+                            <select class="input-field select-field">
+                                <option>Lead Validation</option>
+                            </select>
+                            <select class="input-field select-field">
+                                <option>Long Phrase Match</option>
+                            </select>
+                            <button class="color-button"></button>
+                            <!-- </div> -->
+                            <div>
+                                <i class="material-icons remove delete-document-icon pointer" onclick="remove(this)">
+                                    close </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-btn">
+                        <i onclick="addSignalRow()" class="material-icons add font-36 add-document-input pointer"
+                            ngbtooltip="Add Document(s)">
+                            add_circle </i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="next">Previous</button>
+                    <button class="next">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src = "../assets/js/addProduct.js"></script>
+
+</html>

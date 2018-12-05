@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leads</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/addLeads.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/intlTelInput.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../assets/js/showMenu.js"></script>
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class = "form-div">
+            <div class="nav-tabs">
+                <a rel="upload-file" class="tab upload-file-tab active">Upload File</a>
+                <a rel="check-leads" class="tab check-leads-tab">Check your Leads file</a>
+                <a rel="preview" class="tab preview-tab">Preview</a>
+            </div>
+
+            <div class="content">
+                <div id="upload-file">
+                    <div class="upload-content">
+                        <div class="new-lead">
+                            <label class="form-head">New Lead</label>
+                            <form class="upload-form">
+                                <div class="form-row">
+                                    <label class="field-name">Name</label>
+                                    <input class="input-field" placeholder="Enter the name of the Contact Person" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Job Title</label>
+                                    <input class="input-field" placeholder="Enter the job title of the Contact Person"
+                                        type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Email</label>
+                                    <input class="input-field" placeholder="Email Address of the Contact Person" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Phone</label>
+                                    <input class="input-field phone-field" type="number">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Company</label>
+                                    <input class="input-field" placeholder="The name of the Company" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Lead Source</label>
+                                    <input class="input-field" placeholder="Source of Lead like Online/Offline" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Address</label>
+                                    <textarea rows="3" class="input-field address" placeholder="Valid Portal Address"></textarea>
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Country</label>
+                                    <input class="input-field" placeholder="Country Name" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">City</label>
+                                    <input class="input-field" placeholder="City" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">State</label>
+                                    <input class="input-field" placeholder="State" type="text">
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="field-name">Pin Code</label>
+                                    <input class="input-field" placeholder="Valid Pin Code or ZIP" type="number">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="bulk-upload">
+                            <div>
+                                <label class="form-head">Bulk Upload</label>
+                                <div class="bulk-upload-form">
+                                    <div>
+                                        <div class="field-name">File</div>
+                                        <div class="choose-file">
+                                            <div class="choose-field">No File has been selected
+                                                <input class="file-input-field" type="file">
+                                            </div>
+                                        </div>
+                                        <div class="sample">
+                                            <a class="sample-file-link">
+                                                Download Sample File</a>
+                                            to know upload requirements
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="buttons">
+                        <div></div>
+                        <a rel="check-leads" class="next">Next</a>
+                    </div>
+                </div>
+                <div id="check-leads">
+                    <!-- <div id="upload-file"> -->
+                    <!-- <div class="check-leads-form"> -->
+                    <div class="check-leads-content">
+                        <table>
+                            <tr>
+                                <th>Fields in Talentify</th>
+                                <th>Fields in Uploaded File</th>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Email</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Job Title</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Address</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Mobile</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Lead Source</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Company</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>City</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>State</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Pin Code</td>
+                                <td><select class="select-field">
+                                        <option>name</option>
+                                        <option>email</option>
+                                        <option>mobile</option>
+                                        <option>pincode</option>
+                                        <option>addressline1</option>
+                                        <option>addressline2</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <!-- </div> -->
+
+
+                    </div>
+                    <div class="buttons">
+                        <a rel="upload-file" class="next">Previous</a>
+                        <a rel="preview" class="next">Next</a>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <div id="preview">
+                    <div class="preview-content">
+                        <table class="preview-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>JobTitle</th>
+                                <th>Address</th>
+                                <th>Mobile</th>
+                                <th>LeadSource</th>
+                                <th>Company</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Country</th>
+                                <th>Pincode</th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a class="label invalid">
+                                        Enter Name
+                                    </a>
+                                    <div class="td-text invalid">
+                                        Name Should be 3 alphabets or more
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        demo_1@istar india.com
+                                    </a>
+                                    <div class="td-text valid">
+                                        Looks good
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label invalid">
+                                        Enter Job Title
+                                        <a>
+                                            <div class="td-text invalid">
+                                                invalid Job Title
+                                            </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter Address
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label invalid">
+                                        9999999999
+                                    </a>
+                                    <div class="td-text invalid">
+                                        Number must contain country code(eg +91 for India)
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter Lead Source
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label invalid">
+                                        Enter Company Name
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter State
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter City Name
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter Country
+                                    </a>
+                                    <div class="td-text invalid">
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="label valid">
+                                        Enter Pincode
+                                    </a>
+                                    <div class="td-text valid">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="buttons">
+                        <a rel="check-leads" class="next">Previous</a>
+                        <a class="next">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="material-icons close-icon">close</i>
+
+    </div>
+</body>
+
+<script src="../assets/js/addLeads.js"></script>
+<script src="../assets/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector(".phone-field");
+    window.intlTelInput(input, {
+        utilsScript: "../assets/js/utils.js",
+    });
+</script>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiple Leads</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/showMenu.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/multipleleads.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p>|</p>
+                <img class="userLogo" data-id="38dd1df2c5454cb1bb91fe24beed4cd2" src="https://uc.uxpin.com/files/775795/772509/D-744906.png"
+                    style="">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                    <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                </div> -->
+                <div >
+                    <p class = "name">Seema Meena</p>
+                    <p class = "email">Seema.Meena@gmail.com</p>
+                    <div class = "account">
+                        <a class = "acc-btn">My Account</a>
+                        <a class = "acc-btn">Logout</a>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div class="head">
+            <div class="sort">
+                <form class="searchForm">
+                    <input type="text" class="search">
+                    <button type="submit" class="serach-btn"><i class="fa fa-search"></i></button>
+                </form>
+                <select class="select">
+                    <option value="">Filter</option>
+                </select>
+                <select class="select">
+                    <option value="">Sort</option>
+                </select>
+            </div>
+            <div style="display:flex; width: 40%;justify-content: flex-end;">
+                <button class="btn-1 button">Add Leads</button>
+            </div>
+        </div>
+        <div class="container">
+            <div style="width: 50%;    margin-top: 25px;">
+                <h3 style="color: black;margin-left: 45px!important;margin: 0px;font-size: 25px;">Unichem Laboratories
+                    Ltd.</h3>
+                <div class=container-1>
+                    <i class="fa fa-angle-left" style="font-weight: bold !important;padding-bottom: 20px; "></i>
+                    <div class="child-container" style="    background-color: rgb(255, 225, 229);">
+                        <h3 style="color: black;margin:4%; margin-top: 20px;font-size: 20px;">Shivani Rastogi</h3>
+                        <p style="margin:4%;font-size: 17px;">8145906972</p>
+                        <p style="margin:4%;">shivani_rastogi@gmail.com</p>
+                    </div>
+                    <div class="child-container">
+                        <h3 style="color: black;margin:4%;margin-top: 20px; font-size: 20px;">Seema Meena</h3>
+                        <p style="margin:4%;font-size: 17px;">8334406972 </p>
+                        <p style="margin:4%;">seema_Meena@gmail.com </p>
+                    </div>
+                    <i class="fa fa-angle-right" style="margin-left:15%;font-weight: bold !important;padding-bottom: 20px; "></i>
+                </div>
+            </div>
+
+            <div class="container-2">
+                <div style="padding:10px;display: flex;">
+                    <div>
+                        <img style="width:140px;height: 140px;" src="https://uc.uxpin.com/files/775795/772509/Images-13-82ab28.png">
+                    </div>
+                    <div class="detail">
+                        <h3 style="margin:5%;color: rgb(87, 85, 85);">Vinil Jain</h3>
+                        <p style="margin:5%;font-size: 17px;">Pipeline - College Sales</p>
+                        <p style="margin:5%;font-size: 17px;">Next Task- Call , 3:00 PM, 20/09/2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="width: 50%;    margin-top: 25px;">
+                <h3 style="color: black;margin-left: 45px!important;margin: 0px;font-size: 25px;">Unichem Laboratories
+                    Ltd.</h3>
+                <div class=container-1>
+                    <i class="fa fa-angle-left" style="font-weight: bold !important;padding-bottom: 20px; "></i>
+                    <div class="child-container">
+                        <h3 style="color: black;margin:4%;margin-top: 20px; font-size: 20px;">Shivani Rastogi</h3>
+                        <p style="margin:4%;font-size: 17px;">8145906972</p>
+                        <p style="margin:4%;">shivani_rastogi@gmail.com</p>
+                    </div>
+                    <div class="child-container">
+                        <h3 style="color: black;margin:4%;margin-top: 20px; font-size: 20px;">Seema Meena</h3>
+                        <p style="margin:4%;font-size: 17px;">8334406972 </p>
+                        <p style="margin:4%;">seema_Meena@gmail.com </p>
+                    </div>
+                    <i class="fa fa-angle-right" style="margin-left:15%;font-weight: bold !important;padding-bottom: 20px; "></i>
+                </div>
+            </div>
+
+            <div class="container-3">
+                <!-- <div style="padding:10px;display: flex;">
+                    <div>
+                        <img style="width:140px;height: 140px;" src="https://uc.uxpin.com/files/775795/772509/Images-13-82ab28.png">
+                    </div>
+                    <div class="detail">
+                        <h3 style="margin:5%;color: rgb(87, 85, 85);">Vinil Jain</h3>
+                        <p style="margin:5%;font-size: 17px;">Pipeline - College Sales</p>
+                        <p style="margin:5%;font-size: 17px;">Next Task- Call , 3:00 PM, 20/09/2018</p>
+                    </div>
+                    
+                </div> -->
+                <button class="button" style="width:200px;">Allocate Now</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

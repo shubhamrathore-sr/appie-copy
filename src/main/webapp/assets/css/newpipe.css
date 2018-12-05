@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: rgb(232, 232, 232);
+    margin : 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+    /* margin-top : 50px; */
+    width : 100%;
+}
+
+.topics {
+    display: flex;
+    width: 1175px;
+    height: 23px;
+    align-items: center;
+}
+
+header p{
+    font-size: 10px;
+}
+
+.cardsContainer {
+    display: flex;
+    width: 1175px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    border-right : 1px solid rgb(233, 233, 233);
+    height: 765px;
+    width : 167.8px;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-right : 10px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+   
+    height : 110px;
+    width : 147px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #888888;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(252, 252, 252);
+    width : 147px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    height: 32px;
+    border-radius: 4px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    /* width : 170px; */
+}
+
+.cardDesc {
+    width:147px;
+    height: 52px;
+}
+.cardDesc p{
+    /* font-size: 12px; */
+    text-align: left;
+    color: rgb(140, 140, 140);
+    font-size: 11px;
+    width: 123px;
+    padding: 12px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(42, 128, 57);
+    margin-left : 10px;
+}
+
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+img {
+    height: 30px;
+    width : 30px;
+}
+
+.columnLast {
+    border : none;
+}
+.cardHead p{
+    font-size: 12px;
+    width: 62px;
+    height: 15px;
+}
+
+
+
+
+.call {
+    justify-content: space-around;
+    border-top : 2px solid rgb(126, 211, 33);
+}
+
+.green {
+    font-size: 15px;
+    color : rgb(126, 211, 33);
+}
+
+.blue {
+    font-size: 15px;
+    color : rgb(53, 189, 240);
+}
+
+.red {
+    font-size: 15px;
+    color : rgb(223, 117, 106);
+}
+
+.webinar {
+    justify-content: flex-start;
+}
+
+.topics p{
+    font-size: 25px;
+    color: red;
+    width: 167px;
+    height: 23px;
+    border-right: 1px solid rgb(235, 232, 232);
+    background-color: rgb(250, 250, 250);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../assets/js/showMenu.js"></script>
+
+    <script src="../assets/js/reportSignalCopy.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reportSignal.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reports.css">
+
+</head>
+
+<body>
+    <div class="main-header">
+        <header>
+            <div class="talentify">
+                <h3>Talentify</h3>
+            </div>
+            <div class="linked">
+                <a class="a_tag" href="./dashboard.html">Dashboard</a>
+                <a class="a_tag" href="./pipeline.html">Pipeline</a>
+                <a class="a_tag" href="./team.html">Teams</a>
+                <a class="a_tag" href="./products.html">Product</a>
+                <a class="a_tag" href="./multipleleads.html">Leads</a>
+            </div>
+            <div class="right">
+                <p>|</p>
+                <img class="userLogo" data-id="38dd1df2c5454cb1bb91fe24beed4cd2" src="https://uc.uxpin.com/files/775795/772509/D-744906.png"
+                    style="">
+                <div style="display: flex;align-items:center" onclick="showMenu()">
+                    <a>Welcome Demo Org Admin</a>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+
+            <div id="menuBar">
+                <!-- <div >
+                    <img class="image" src = "https://uc.uxpin.com/files/775795/772509/Images-06-b291d1.png">
+                </div> -->
+                <div>
+                    <p class="name">Seema Meena</p>
+                    <p class="email">Seema.Meena@gmail.com</p>
+                    <div class="account">
+                        <a class="acc-btn">My Account</a>
+                        <a class="acc-btn">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <div class="graph-container">
+        <div class="option">
+            <div class="choose">
+                <select class="select">
+                    <option value="">Filter</option>
+                </select>
+                <select class="select">
+                    <option value="">Sort</option>
+                </select>
+            </div>
+
+            <div class="link">
+                <div class="team-link">
+                    <a href = "reports.html"  style="color: gray;text-decoration: none;font-weight: bold;">Team</a>
+                </div>
+
+                <p style="margin-right: 15px; color:gray">|</p>
+
+                <a  class="activeLink">Signals</a>
+            </div>
+        </div>
+        <div id="container"></div>
+        <div class="pages">
+            <div class="page-numbers">
+                <div class = "page">
+                    <i class="fa fa-angle-double-left"></i>
+                </div>
+                <div class = "page page1">
+                    1
+                </div>
+                <div class = "page">
+                    2
+                </div>
+                <div class = "page">
+                    3
+                </div>
+                <div class = "page" >
+                    4
+                </div>
+                <div class = "page">
+                    5
+                </div>
+                <div class = "page">
+                    <i class="fa fa-angle-double-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
